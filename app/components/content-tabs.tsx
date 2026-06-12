@@ -30,7 +30,7 @@ export default function ContentTabs({
       <div
         role="tablist"
         aria-label={ariaLabel}
-        className="flex gap-2 overflow-x-auto border-b border-gray-400 pb-0 scrollbar-thin sm:gap-0"
+        className="flex gap-2 overflow-x-auto border-b border-[var(--brand-purple)]/60 pb-0 scrollbar-thin sm:gap-0"
       >
         {items.map((item) => {
           const isActive = item.id === activeItem.id;
@@ -44,10 +44,10 @@ export default function ContentTabs({
               aria-controls={`panel-${item.id}`}
               id={`tab-${item.id}`}
               onClick={() => setActiveItemId(item.id)}
-              className={`relative shrink-0 rounded-t-lg border border-b px-4 py-3 text-left text-sm transition focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 sm:-mb-px ${
+              className={`relative shrink-0 rounded-t-lg border border-b px-4 py-3 text-left text-sm transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-green)] focus-visible:ring-offset-2 sm:-mb-px ${
                 isActive
-                  ? "z-10 border-gray-400 border-b-white bg-white text-black"
-                  : "border-gray-300 bg-white/70 text-gray-700 hover:border-gray-400 hover:bg-white/90"
+                  ? "z-10 border-[var(--brand-purple)] border-b-[var(--brand-yellow-soft)] bg-[var(--brand-yellow-soft)] text-black"
+                  : "border-[var(--brand-purple)]/35 bg-white/70 text-gray-700 hover:border-[var(--brand-green)] hover:bg-[var(--brand-green-soft)]"
               }`}
             >
               <span className="font-semibold text-black sm:hidden">
@@ -64,7 +64,7 @@ export default function ContentTabs({
         id={`panel-${activeItem.id}`}
         role="tabpanel"
         aria-labelledby={`tab-${activeItem.id}`}
-        className="border border-t-0 border-gray-400 bg-white p-4 shadow-sm"
+        className="border border-t-0 border-[var(--brand-purple)] bg-[var(--brand-yellow-soft)] p-4 shadow-sm"
       >
         {activeItem.panel}
       </div>

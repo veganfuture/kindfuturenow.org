@@ -4,8 +4,14 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 220, 221, 216;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 244, 214, 38;
+  --background-end-rgb: 255, 250, 214;
+  --brand-purple: #83459b;
+  --brand-green: #45b545;
+  --brand-yellow: #f4d626;
+  --brand-purple-soft: #efe4f4;
+  --brand-green-soft: #e5f6e5;
+  --brand-yellow-soft: #fff8cf;
 }
 
 html, body {
@@ -16,11 +22,12 @@ html, body {
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+      180deg,
+      rgba(244, 214, 38, 0.45) 0%,
+      rgba(131, 69, 155, 0.08) 38%,
+      rgba(69, 181, 69, 0.08) 100%
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-end-rgb));
     padding-left: 2px;
     padding-right: 2px;
 }
@@ -37,4 +44,12 @@ p + p {
 
 a {
   @apply cursor-pointer underline;
+  color: var(--brand-green);
+  text-decoration-color: color-mix(in srgb, var(--brand-green) 65%, transparent);
+  text-underline-offset: 0.16em;
+}
+
+a:hover {
+  color: var(--brand-purple);
+  text-decoration-color: var(--brand-purple);
 }

@@ -217,7 +217,9 @@ export default function Home() {
   return (
     <div className="flex min-h-full flex-col">
       <div>
-        <div className="pt-3 text-3xl">Would you want to be eaten as a hot dog?</div>
+        <div className="pt-3 text-3xl font-bold text-[var(--brand-purple)]">
+          Would you want to be eaten as a hot dog?
+        </div>
         <div className="py-3">
           <div className="flex flex-col gap-4 md:flex-row-reverse md:items-start">
             <Image
@@ -225,7 +227,7 @@ export default function Home() {
               alt="Image of alien eating a human hot dog"
               width={440}
               height={316}
-              className="w-full max-w-[440px] self-center md:w-[440px] md:flex-none"
+              className="w-full max-w-[440px] self-center rounded-2xl border-4 border-[var(--brand-purple)] bg-white shadow-[10px_10px_0_var(--brand-yellow)] md:w-[440px] md:flex-none"
             />
             <div>
               <p>
@@ -247,16 +249,18 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <blockquote className="my-6 border-l-4 border-black bg-white/70 px-6 py-5 text-xl leading-relaxed text-gray-900 shadow-sm">
+          <blockquote className="my-6 border-l-4 border-[var(--brand-purple)] bg-[var(--brand-purple-soft)] px-6 py-5 text-xl leading-relaxed text-gray-900 shadow-sm">
             <p className="font-serif italic">
               &quot;In relation to animals, all people are Nazis. For the
               animals, it is an eternal Treblinka&quot;
             </p>
-            <footer className="pt-3 text-sm font-semibold uppercase tracking-[0.18em] text-gray-600">
+            <footer className="pt-3 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--brand-purple)]">
               Isaac Bashevis Singer
             </footer>
           </blockquote>
-          <div className="py-3 text-3xl">Educate yourself</div>
+          <div className="py-3 text-3xl font-bold text-[var(--brand-purple)]">
+            Educate yourself
+          </div>
           <p>
             Animals deserve moral consideration. The very least you can do is to
             educate yourself on what you&apos;re paying for. Watch these videos
@@ -264,7 +268,9 @@ export default function Home() {
           </p>
         </div>
         <ContentTabs ariaLabel="Featured videos" items={videos} />
-        <div className="py-6 text-3xl">Resources to help you get started</div>
+      <div className="py-6 text-3xl font-bold text-[var(--brand-purple)]">
+        Resources to help you get started
+      </div>
         <div className="py-3">
           According to the{" "}
           <a
@@ -285,7 +291,7 @@ export default function Home() {
         </div>
         <ContentTabs ariaLabel="Vegan resources" items={resources} />
       </div>
-      <footer className="relative left-1/2 mt-auto w-screen -translate-x-1/2 bg-black py-6 text-white">
+      <footer className="relative left-1/2 mt-auto w-screen -translate-x-1/2 bg-[var(--brand-purple)] py-6 text-white">
         <div className="mx-auto flex w-full max-w-[80%] flex-col items-center justify-between gap-2 px-4 text-sm md:flex-row">
           <p>Free to use. No rights reserved. With love from Vegan Future 💚</p>
           <div className="flex items-center gap-4">
@@ -295,7 +301,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="text-gray-500 hover:text-red-600 transition"
+                className="text-[var(--brand-yellow)] hover:text-white transition"
               >
                 <FaYoutube className="h-6 w-6" />
               </a>
@@ -305,13 +311,13 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="text-gray-500 hover:text-pink-600 transition"
+                className="text-[var(--brand-green)] hover:text-white transition"
               >
                 <FaInstagram className="h-6 w-6" />
               </a>
               <a
                 href="https://veganfuture.org/contact"
-                className="hover:underline text-white/80 hover:text-white"
+                className="text-white/85 hover:text-[var(--brand-yellow)]"
                 target="blank"
               >
                 Contact us
