@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { BASE_METADATA } from "@/lib/metadata";
@@ -6,6 +6,9 @@ import { BASE_METADATA } from "@/lib/metadata";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = BASE_METADATA;
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
 
 export default function RootLayout({
   children,
@@ -14,8 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="mx-auto lg:max-w-[800px] max-w-full p-2">
+      <body className={`${inter.className} min-h-screen`}>
+        <main className="mx-auto flex min-h-screen max-w-full flex-col p-2 lg:max-w-[800px]">
           {children}
         </main>
       </body>

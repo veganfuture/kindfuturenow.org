@@ -36,5 +36,5 @@ p + p {
 }
 
 a {
-  @apply underline;
+  @apply cursor-pointer underline;
 }
