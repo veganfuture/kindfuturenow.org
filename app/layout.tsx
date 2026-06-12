@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen`}>
-        <main className="mx-auto flex min-h-screen max-w-full flex-col p-2 lg:max-w-[800px]">
+        <main className="mx-auto flex min-h-screen max-w-full flex-col p-3 lg:max-w-[800px]">
           {children}
         </main>
       </body>

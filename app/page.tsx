@@ -1,6 +1,7 @@
 import CurrentYear from "./components/current-year";
 import ContentTabs from "./components/content-tabs";
 import { FaYoutube, FaInstagram } from "react-icons/fa";
+import Image from "next/image";
 
 const videos = [
   {
@@ -216,27 +217,36 @@ export default function Home() {
   return (
     <div className="flex min-h-full flex-col">
       <div>
-        <div className="pt-2 text-3xl">
-          Empathy for <s>humans</s> animals
-        </div>
-        <div className="py-2">
-          <p>
-            What if aliens landed on earth and started to mass breed in massive
-            farms for food, entertainment and clothing? Would you accept that
-            fate just because they are intellectually vastly superior or would
-            you demand that the aliens find a non-violent way to do these
-            things?
-          </p>
-          <p>
-            Every year, humans kill more than{" "}
-            <a href="https://considerveganism.com/counter/" target="blank">
-              90 billion land animals globally. When marine life is included,
-              that number rises to around 2 trillion
-            </a>
-            . In roughly six weeks, we kill more animals than there have ever
-            been humans in all of history. Isaac Bashevis Singer, Nobel Prize
-            winner and survivor of World War II, wrote:
-          </p>
+        <div className="pt-3 text-3xl">Would you want to be eaten as a hot dog?</div>
+        <div className="py-3">
+          <div className="flex flex-col gap-4 md:flex-row-reverse md:items-start">
+            <Image
+              src="alien-hotdog.png"
+              alt="Image of alien eating a human hot dog"
+              width={440}
+              height={316}
+              className="w-full max-w-[440px] self-center md:w-[440px] md:flex-none"
+            />
+            <div>
+              <p>
+                What if aliens landed on earth and started to mass breed in massive
+                farms for food, entertainment and clothing? Would you accept that
+                fate just because they are intellectually vastly superior or would
+                you demand that the aliens find a non-violent way to do these
+                things?
+              </p>
+              <p>
+                Every year, humans kill more than{" "}
+                <a href="https://considerveganism.com/counter/" target="blank">
+                  90 billion land animals globally. When marine life is included,
+                  that number rises to around 2 trillion
+                </a>
+                . In roughly six weeks, we kill more animals than there have ever
+                been humans in all of history. Isaac Bashevis Singer, Nobel Prize
+                winner and survivor of World War II, wrote:
+              </p>
+            </div>
+          </div>
           <blockquote className="my-6 border-l-4 border-black bg-white/70 px-6 py-5 text-xl leading-relaxed text-gray-900 shadow-sm">
             <p className="font-serif italic">
               &quot;In relation to animals, all people are Nazis. For the
@@ -246,16 +256,16 @@ export default function Home() {
               Isaac Bashevis Singer
             </footer>
           </blockquote>
-          <div className="py-2 text-3xl">Educate yourself</div>
+          <div className="py-3 text-3xl">Educate yourself</div>
           <p>
-            Animals deserve moral consideration. The very least you can do is
-            to educate yourself on what you&apos;re paying for. Watch these
-            videos to educate yourself on:
+            Animals deserve moral consideration. The very least you can do is to
+            educate yourself on what you&apos;re paying for. Watch these videos
+            to educate yourself on:
           </p>
         </div>
         <ContentTabs ariaLabel="Featured videos" items={videos} />
         <div className="py-6 text-3xl">Resources to help you get started</div>
-        <div className="py-2">
+        <div className="py-3">
           According to the{" "}
           <a
             href="https://en.wikipedia.org/wiki/Veganism#Positions_of_dietetic_and_government_associations"
