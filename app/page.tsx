@@ -87,7 +87,9 @@ const resources = [
     mobileTitle: "Challenges",
     panel: (
       <div className="min-h-[200px] p-4">
-        <h2 className="pb-4 text-xl font-semibold">Vegan challenges to try</h2>
+        <h2 className="pb-4 text-xl font-semibold tracking-tight [font-family:var(--font-display)]">
+          Vegan challenges to try
+        </h2>
         <ul className="list-disc space-y-3 pl-5">
           <li>
             <a href="https://challenge22.com/" target="_blank">
@@ -121,7 +123,7 @@ const resources = [
     mobileTitle: "Food",
     panel: (
       <div className="min-h-[200px] p-4">
-        <h2 className="pb-4 text-xl font-semibold">
+        <h2 className="pb-4 text-xl font-semibold tracking-tight [font-family:var(--font-display)]">
           Vegan food and recipe resources
         </h2>
         <ul className="list-disc space-y-3 pl-5">
@@ -171,7 +173,9 @@ const resources = [
     mobileTitle: "Guides",
     panel: (
       <div className="min-h-[200px] p-4">
-        <h2 className="pb-4 text-xl font-semibold">Practical vegan guides</h2>
+        <h2 className="pb-4 text-xl font-semibold tracking-tight [font-family:var(--font-display)]">
+          Practical vegan guides
+        </h2>
         <ul className="list-disc space-y-3 pl-5">
           <li>
             <a href="https://vegancheatsheet.org/" target="_blank">
@@ -223,7 +227,7 @@ export default function Home() {
   return (
     <div className="flex min-h-full flex-col">
       <div>
-        <div className="pt-3 text-3xl font-bold text-[var(--brand-purple)]">
+        <div className="pt-3 text-4xl font-bold tracking-tight text-[var(--brand-purple)] [font-family:var(--font-display)]">
           Would you want to be eaten as a hot dog?
         </div>
         <div className="py-3">
@@ -264,7 +268,7 @@ export default function Home() {
               Isaac Bashevis Singer
             </footer>
           </blockquote>
-          <div className="py-3 text-3xl font-bold text-[var(--brand-purple)]">
+          <div className="py-3 text-4xl font-bold tracking-tight text-[var(--brand-purple)] [font-family:var(--font-display)]">
             Educate yourself
           </div>
           <p>
@@ -274,9 +278,9 @@ export default function Home() {
           </p>
         </div>
         <ContentTabs ariaLabel="Featured videos" items={videos} />
-        <div className="py-6 text-3xl font-bold text-[var(--brand-purple)]">
-          Resources to help you get started
-        </div>
+      <div className="py-6 text-4xl font-bold tracking-tight text-[var(--brand-purple)] [font-family:var(--font-display)]">
+        Resources to help you get started
+      </div>
         <div className="py-3">
           According to the{" "}
           <a
