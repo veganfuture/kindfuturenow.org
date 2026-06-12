@@ -1,6 +1,5 @@
 import CurrentYear from "./components/current-year";
 import ContentTabs from "./components/content-tabs";
-import { FaYoutube, FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 
 const videos = [
@@ -278,9 +277,9 @@ export default function Home() {
           </p>
         </div>
         <ContentTabs ariaLabel="Featured videos" items={videos} />
-      <div className="py-6 text-4xl font-bold tracking-tight text-[var(--brand-purple)] [font-family:var(--font-display)]">
-        Resources to help you get started
-      </div>
+        <div className="py-6 text-4xl font-bold tracking-tight text-[var(--brand-purple)] [font-family:var(--font-display)]">
+          Resources to help you get started
+        </div>
         <div className="py-3">
           According to the{" "}
           <a
@@ -301,41 +300,6 @@ export default function Home() {
         </div>
         <ContentTabs ariaLabel="Vegan resources" items={resources} />
       </div>
-      <footer className="relative left-1/2 mt-auto w-screen -translate-x-1/2 bg-[var(--brand-purple)] py-6 text-white">
-        <div className="mx-auto flex w-full max-w-[80%] flex-col items-center justify-between gap-2 px-4 text-sm md:flex-row">
-          <p>Free to use. No rights reserved. With love from Vegan Future 💚</p>
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-4">
-              <a
-                href="https://www.youtube.com/@kindfuturenow"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="YouTube"
-                className="text-[var(--brand-yellow)] hover:text-white transition"
-              >
-                <FaYoutube className="h-6 w-6" />
-              </a>
-
-              <a
-                href="https://www.instagram.com/kindfuturenow"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-[var(--brand-green)] hover:text-white transition"
-              >
-                <FaInstagram className="h-6 w-6" />
-              </a>
-              <a
-                href="https://veganfuture.org/contact"
-                className="text-white/85 hover:text-[var(--brand-yellow)]"
-                target="blank"
-              >
-                Contact us
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
