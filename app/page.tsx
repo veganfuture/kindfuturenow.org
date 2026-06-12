@@ -64,10 +64,10 @@ const videos = [
           farming keeps pushing ecosystems toward collapse.
         </p>
         <p className="pb-2">
-          The award winning documentary <em>Eating Our Way to Extinction</em>{" "}
-          explores that destruction in detail, connecting meat and dairy
-          production to climate change, species loss, and the unraveling of the
-          natural world.
+          The award winning documentary{" "}
+          <strong>Eating Our Way to Extinction</strong> explores that
+          destruction in detail, connecting meat and dairy production to climate
+          change, species loss, and the unraveling of the natural world.
         </p>
         <iframe
           src="https://www.youtube.com/embed/KcJyXjs65rE?si=06YtUFrTDjbUCkfe"
@@ -174,6 +174,12 @@ const resources = [
         <h2 className="pb-4 text-xl font-semibold">Practical vegan guides</h2>
         <ul className="list-disc space-y-3 pl-5">
           <li>
+            <a href="https://vegancheatsheet.org/" target="_blank">
+              Vegan Cheatsheet
+            </a>{" "}
+            - Enormous list of links to all kinds of vegan resources.
+          </li>
+          <li>
             <a
               href="https://docs.google.com/document/d/13OGWwR1ZR_qQ_UMmazYHmz0Aj-cfCJ47ul0QHO8eA8w/edit?tab=t.0"
               target="_blank"
@@ -181,7 +187,7 @@ const resources = [
               Advice for new vegans
             </a>{" "}
             - A detailed Google doc written by a vegan who wishes he could have
-            gone back in time and read this guide at the start.
+            gone back in time and read this guide at the start of his journey.
           </li>
           <li>
             <a
@@ -231,21 +237,21 @@ export default function Home() {
             />
             <div>
               <p>
-                What if aliens landed on earth and started to mass breed in massive
-                farms for food, entertainment and clothing? Would you accept that
-                fate just because they are intellectually vastly superior or would
-                you demand that the aliens find a non-violent way to do these
-                things?
+                What if aliens landed on earth and started to mass breed humans
+                in massive farms for food, entertainment and clothing? Would you
+                accept your fate just because they are intellectually vastly
+                superior or would you demand that the aliens find a non-violent
+                way to get these things?
               </p>
               <p>
                 Every year, humans kill more than{" "}
                 <a href="https://considerveganism.com/counter/" target="blank">
-                  90 billion land animals globally. When marine life is included,
-                  that number rises to around 2 trillion
+                  90 billion land animals globally. When marine life is
+                  included, that number rises to around 2 trillion
                 </a>
-                . In roughly six weeks, we kill more animals than there have ever
-                been humans in all of history. Isaac Bashevis Singer, Nobel Prize
-                winner and survivor of World War II, wrote:
+                . In roughly six weeks, we kill more animals than there have
+                ever been humans in all of history. Isaac Bashevis Singer, Nobel
+                Prize winner and survivor of World War II, wrote:
               </p>
             </div>
           </div>
@@ -268,9 +274,9 @@ export default function Home() {
           </p>
         </div>
         <ContentTabs ariaLabel="Featured videos" items={videos} />
-      <div className="py-6 text-3xl font-bold text-[var(--brand-purple)]">
-        Resources to help you get started
-      </div>
+        <div className="py-6 text-3xl font-bold text-[var(--brand-purple)]">
+          Resources to help you get started
+        </div>
         <div className="py-3">
           According to the{" "}
           <a

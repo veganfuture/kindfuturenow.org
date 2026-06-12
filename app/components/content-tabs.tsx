@@ -30,7 +30,7 @@ export default function ContentTabs({
       <div
         role="tablist"
         aria-label={ariaLabel}
-        className="flex gap-2 overflow-x-auto border-b border-[var(--brand-purple)]/60 pb-0 scrollbar-thin sm:gap-0"
+        className="flex gap-2 overflow-x-auto overflow-y-hidden border-b border-[var(--brand-purple)]/60 pb-0 scrollbar-thin sm:gap-0"
       >
         {items.map((item) => {
           const isActive = item.id === activeItem.id;
